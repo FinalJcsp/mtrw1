@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>盒子模型</title>
+        <style type="text/css">
+            .div{
+                /*border:solid 2px;*/
+                width:30%;
+                height:390px;
+                background-color:white;
+                display:inline-block;
+                float:left;
+                box-sizing:border-box;
+            }
+
+            .divd{
+                /*border:solid 2px black;*/
+                width:50%;
+                height:290px;
+                background-color:white;
+                display:inline-block;
+            }
+
+            #div1{
+                border:solid 3px #a4110c;
+                width:95%;
+                height:200px;
+                background-color:#a4110c;
+                color:white;
+                /*margin-bottom:10px;*/
+                display:inline-block;
+            }
+
+            #div2{
+                border:solid 3px #0e9393;
+                width:30%;
+                height:100px;
+                background-color:#0e9393;
+                color:white;
+            }
+
+            #div3{
+                border:solid 3px #0e9393;
+                width:45%;
+                height:100px;
+                background-color:#0e9393;
+                color:white;
+                margin-top:10px;
+                margin-right:12px;
+                display:inline-block;
+            }
+
+            #div4{
+                border:solid 3px #6729d0;
+                width:30%;
+                height:200px;
+                background-color: #6729d0;
+                color:white;
+                margin-top:12px;
+                margin-right:10px;
+                display:inline-block;
+            }
+
+            #div5{
+                border:solid 3px #dc740a;
+                width:45%;
+                height:100px;
+                background-color: #dc740a;
+                color:white;
+                /*margin-top:100px;*/
+                /*margin-left:10px;*/
+                display:inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <span class="div">
+            <div id="div1">1</div>
+            <div id="div3">3</div>
+            <div id="div5">5</div>
+        </span>
+
+        <span class="divd">
+            <div id="div2">2</div>
+            <div id="div4">4</div>
+        </span>
+    </body>
+</html>
