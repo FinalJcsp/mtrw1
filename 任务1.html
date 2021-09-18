@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>任务1</title>
+        <style type="text/css">
+            div {
+                padding: 2px;
+                margin: 2px;
+                color:white;
+            }
+
+            .container {
+                display: inline-flex;
+                width: 560px;
+                height: 240px;
+                border: 2px black;
+                flex-direction: row;
+            }
+
+            .container .left {
+                display:inline-flex;
+                width: 480px;
+                height: 296px;
+                flex-wrap:wrap;
+            }
+
+            .container .left .l1{
+                width: 461px;
+                height: 185px;
+                border: 1px solid red;
+                margin-right:10px;
+                background-color: #a82c2c;
+            }
+
+            .container .left .l2{
+                width: 220px;
+                height: 85px;
+                margin-right:15px;
+                margin-top:14px;
+                background-color: #1c8357;
+            }
+
+            .container .left .l3{
+                width: 219px;
+                height: 85px;
+                margin-right:11px;
+                margin-top:14px;
+                background-color: #da5e19;
+            }
+
+            .container .right {
+                display: flex;
+                width:220px;
+                height:296px;
+                border: 1px black;
+                flex-direction: column;
+            }
+
+            .r1 {
+                width:160px;
+                height:126px;
+                margin-bottom:14px;
+                background-color: #3aa1b2;
+            }
+
+            .r2 {
+                width:160px;
+                height:226px;
+                background-color: #562791;
+            }
+        </style>
+    </head>
+
+    <body>
+    <div class="container">
+        <div class="left">
+            <div class="l1">1</div>
+            <div class="l2">3</div>
+            <div class="l3">5</div>
+        </div>
+
+        <div class="right">
+            <div class="r1">2</div>
+            <div class="r2">4</div>
+        </div>
+    </div>
+    </body>
+</html>
