@@ -2,15 +2,12 @@
     let provinceNode = document.getElementById('province');
     let cityNode = document.getElementById('city');
     let countryNode = document.getElementById('country');
-
-     //省会的获取
         let provinceStr = '';
         for(let i = 0; i < province.length; i++){
             provinceStr += `<option value=${province[i].item_code}>${province[i].item_name}</option>`;
         }
         provinceNode.innerHTML = provinceStr;
     
-    //城市的获取
         let cityArr =[], j = 0;
         {
             for (let i = 0; i < city.length; i++) {
@@ -23,7 +20,6 @@
             }
             cityNode.innerHTML = cityStr;
         }
-    //区县的获取
     let countryArr =[], k = 0;
     {
         for (let i = 0; i < country.length; i++) {
@@ -38,7 +34,6 @@
     }
 
     provinceNode.onchange=function() {
-        //城市的获取
     let cityArr =[], j = 0;
     {
         for (let i = 0; i < city.length; i++) {
@@ -52,7 +47,10 @@
             cityNode.innerHTML = cityStr;
     }
 
-    let countryArr =[], k = 0;
+    }
+
+    cityNode.onchange=function(){
+        let countryArr =[], k = 0;
     {
         for (let i = 0; i < country.length; i++) {
             if (country[i].item_code - cityNode.value > 0 && country[i].item_code - cityNode.value < 100)
@@ -64,6 +62,5 @@
         }
         countryNode.innerHTML = countryStr;
     }
-
     }
 })();
